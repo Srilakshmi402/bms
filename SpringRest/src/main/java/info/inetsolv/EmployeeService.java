@@ -14,7 +14,7 @@ public class EmployeeService {
 		return "welcome to spring rest";
 	}
 
-	@GetMapping(produces = {"application/xml"})
+	@GetMapping(produces = {"application/xml","application/json"})
 	public Employee Show() {
 		return new Employee(10, "kishore", 2000d);
 	}
